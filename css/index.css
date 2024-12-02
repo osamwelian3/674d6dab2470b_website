@@ -1,0 +1,17 @@
+/* #header-modal-text .bg {
+    background-image: url('../images/madiva_bg_left.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    opacity:1;
+}#desc-img-list-3col .bg-wrap {
+    background-color: #f4f5f6;
+} */
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: masonry;
+  }
+

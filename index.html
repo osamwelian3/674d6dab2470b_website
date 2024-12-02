@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+           <meta charset="UTF-8">
+           <title>MADIVA CBO</title>
+           
+           <meta name="keywords" content="Madiva,CBO,Community,Organization,Gender,GBV,Girls,Women,Empowerment" />
+           <meta name="description" content="Madiva is a community based organization whose main aim is to create a GBV free community." />
+           <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/bootstrap.weber.css" />
+		<link rel="stylesheet" href="css/fx.css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+		<link rel="stylesheet" href="css/masonryfilter.css" />
+           <link rel="stylesheet" href="css/custom.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "2tZM6G1F4N4A71RxJ",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+				document.getElementById('submitBtn').setAttribute('disabled', 'disabled')
+						document.getElementById('submitBtn').innerText = 'Sending...'
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_w06duno', 'template_wtx3mce', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+						document.getElementById('submitBtn').setAttribute('style', 'background-color: green;')
+						document.getElementById('submitBtn').innerText = 'Success'
+                    }, (error) => {
+                        console.log('FAILED...', error);
+						document.getElementById('submitBtn').innerText = 'Error: Try again Later '
+						document.getElementById('submitBtn').setAttribute('style', 'background-color: red;')
+						setTimeout(() => {
+							document.getElementById('submitBtn').removeAttribute('disabled')
+						}, 5000);
+                    });
+            });
+			document.getElementById('contact-form2').addEventListener('submit', function(event) {
+				document.getElementById('subscribeBtn').setAttribute('disabled', 'disabled')
+						document.getElementById('subscribeBtn').innerText = 'Subscribing...'
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_w06duno', 'template_wtx3mce', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+						document.getElementById('subscribeBtn').setAttribute('style', 'background-color: green; color: white;')
+						document.getElementById('subscribeBtn').innerText = 'Success'
+                    }, (error) => {
+                        console.log('FAILED...', error);
+						document.getElementById('subscribeBtn').innerText = 'Error: Try again Later '
+						document.getElementById('subscribeBtn').setAttribute('style', 'background-color: red;')
+						setTimeout(() => {
+							document.getElementById('subscribeBtn').removeAttribute('disabled')
+						}, 5000);
+                    });
+            });
+        }
+    </script>
+
+       </head>
+           <body class="light-page">
+		<div id="wrap">
+			<nav id="nav-logo-social" class="navbar navbar-expand-lg light" style="margin-bottom: 5px;">
+    			<div class="container">
+        			<div class="row align-items-center">
+            			<div class="col-auto">
+                			<a class="navbar-brand" href="#">
+                    			<img src="images/madiva_logo.jpg" height="60px" class="mw-100" alt="">
+                			</a>
+                			<p class="navbar-text text-secondary ml-20 hidden-sm">
+                    Madiva CBO
+                			</p>
+            			</div>
+            			<div class="col-auto ml-auto">
+                			<div class="d-inline-block inline-group">
+                    			<a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m16 2.57842783c-.5878969.26772602-1.2208722.44877814-1.8848389.52967377.6780537-.41603467 1.1983331-1.07571927 1.4434466-1.86156254-.6348535.38521729-1.3363855.66546287-2.0858132.81569761-.5972882-.65390635-1.4509597-1.06223667-2.3957269-1.06223667-1.81158659 0-3.28132891 1.50716263-3.28132891 3.36583604 0 .26387384.02817397.52004334.08452192.7665824-2.72817984-.14060431-5.14644597-1.47923438-6.76644949-3.51799687-.28267888.49885639-.44420966 1.07764536-.44420966 1.69399302 0 1.16720838.57944473 2.19766462 1.460351 2.80149272-.53718378-.01637174-1.04431532-.16949561-1.48758585-.41988685v.04141086c0 1.63139521 1.13165464 2.99217528 2.6342666 3.30034911-.27516582.07896954-.56535775.11845431-.86494101.11845431-.21130481 0-.41791395-.02022391-.61794917-.05970868.41791395 1.33670394 1.62939485 2.31034064 3.06626754 2.33634284-1.12320245.9033345-2.53941422 1.4416757-4.07677408 1.4416757-.26483536 0-.52685332-.0154087-.78323649-.0462261 1.45283794.9534128 3.17896343 1.5110148 5.03187181 1.5110148 6.03862179 0 9.33967249-5.12820509 9.33967249-9.57650171 0-.14638257-.0028174-.29276514-.0084522-.43625858.6414275-.47478031 1.198333-1.06705188 1.6369079-1.74214518" fill="#00aaec" fill-rule="evenodd"></path></svg></a>
+                    			<a href="https://web.facebook.com/profile.php?id=61569385179702" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m8.54611842 16h-7.66304125c-.48785295 0-.88307717-.3954695-.88307717-.8831324v-14.23379728c0-.48778708.3952863-.88307032.88307717-.88307032h14.23390773c.4876667 0 .8830151.39528324.8830151.88307032v14.23379728c0 .487725-.3954105.8831324-.8830151.8831324h-4.0772165v-6.19608178h2.0797387l.3114113-2.41472301h-2.39115v-1.54164808c0-.69911803.1941355-1.1755439 1.1966615-1.1755439l1.2786739-.00055875v-2.15974763c-.2211418-.0294274-.980176-.09517343-1.8632531-.09517343-1.84357263 0-3.10573228 1.12531866-3.10573228 3.19187953v1.78079226h-2.08507782v2.41472301h2.08507782z" fill="#4460a0" fill-rule="evenodd"></path></svg></a>
+                    			<a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><radialGradient id="a" cx="1.163903%" cy="98.836097%" r="139.775349%"><stop offset="0" stop-color="#ffc800"></stop><stop offset=".486454468" stop-color="#ff2a7b"></stop><stop offset="1" stop-color="#a000bc"></stop></radialGradient><path d="m8.00001588 0c2.17265372 0 2.44508882.00920925 3.29837392.04814217.8515067.03883765 1.4330552.17408667 1.9419142.37186335.5260707.20441369.9722115.47796031 1.4169867.92270379.4447435.44477523.7182901.89091598.9227355 1.41698671.197745.50885894.332994 1.09040748.3718316 1.94191421.0389329.85328506.0481422 1.12572022.0481422 3.29840565 0 2.17265372-.0092093 2.44508882-.0481422 3.29837392-.0388376.8515067-.1740866 1.4330552-.3718316 1.9419142-.2044454.5260707-.477992.9722115-.9227355 1.4169867-.4447752.4447435-.890916.7182901-1.4169867.9227355-.508859.197745-1.0904075.332994-1.9419142.3718316-.8532851.0389329-1.1257202.0481422-3.29837392.0481422-2.17268543 0-2.44512059-.0092093-3.29840565-.0481422-.85150673-.0388376-1.43305527-.1740866-1.94191421-.3718316-.52607073-.2044454-.97221148-.477992-1.41698671-.9227355-.44474348-.4447752-.7182901-.890916-.92270379-1.4169867-.19777668-.508859-.3330257-1.0904075-.37186335-1.9419142-.03893292-.8532851-.04814217-1.1257202-.04814217-3.29837392 0-2.17268543.00920925-2.44512059.04814217-3.29840565.03883765-.85150673.17408667-1.43305527.37186335-1.94191421.20441369-.52607073.47796031-.97221148.92270379-1.41698671.44477523-.44474348.89091598-.7182901 1.41698671-.92270379.50885894-.19777668 1.09040748-.3330257 1.94191421-.37186335.85328506-.03893292 1.12572022-.04814217 3.29840565-.04814217zm0 1.44143887c-2.13610246 0-2.38913467.0081613-3.23270238.04664963-.7799921.03556678-1.20358605.16589361-1.48548451.27545198-.37341939.14512515-.63991616.31848143-.91984575.59844276-.27996133.27992959-.45331761.54642636-.59844276.91984575-.10955837.28189846-.2398852.70549241-.27545198 1.48548451-.03848833.84356771-.04664963 1.09659992-.04664963 3.23270238 0 2.13607072.0081613 2.38910292.04664963 3.23267062.03556678.7799921.16589361 1.2035861.27545198 1.4854845.14512515.3734194.31851318.6399162.59844276.9198458.27992959.2799613.54642636.4533176.91984575.5984427.28189846.1095584.70549241.2398852 1.48548451.275452.84347244.0384883 1.09644114.0466496 3.23270238.0466496 2.13622952 0 2.38922992-.0081613 3.23267062-.0466496.7799921-.0355668 1.2035861-.1658936 1.4854845-.275452.3734194-.1451251.6399162-.3184814.9198458-.5984427.2799613-.2799296.4533176-.5464264.5984427-.9198458.1095584-.2818984.2398852-.7054924.275452-1.4854845.0384883-.8435677.0466496-1.0965999.0466496-3.23267062 0-2.13610246-.0081613-2.38913467-.0466496-3.23270238-.0355668-.7799921-.1658936-1.20358605-.275452-1.48548451-.1451251-.37341939-.3184814-.63991616-.5984427-.91984575-.2799296-.27996133-.5464264-.45331761-.9198458-.59844276-.2818984-.10955837-.7054924-.2398852-1.4854845-.27545198-.8435677-.03848833-1.0965999-.04664963-3.23267062-.04664963zm0 2.4504556c2.26884272 0 4.10808962 1.8392469 4.10808962 4.10812141 0 2.26884272-1.8392469 4.10808962-4.10808962 4.10808962-2.26887451 0-4.10812141-1.8392469-4.10812141-4.10808962 0-2.26887451 1.8392469-4.10812141 4.10812141-4.10812141zm0 6.77477223c1.47275033 0 2.66665082-1.19390049 2.66665082-2.66665082 0-1.47278209-1.19390049-2.66668255-2.66665082-2.66668255-1.47278209 0-2.66668255 1.19390046-2.66668255 2.66668255 0 1.47275033 1.19390046 2.66665082 2.66668255 2.66665082zm5.23041202-6.9370774c0 .53019901-.4298182.95998539-.9600172.95998539-.5301673 0-.9599854-.42978638-.9599854-.95998539 0-.53019902.4298181-.96001715.9599854-.96001715.530199 0 .9600172.42981813.9600172.96001715z" fill="url(#a)" fill-rule="evenodd"></path></svg></a>
+                			</div>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</nav>
+			<header id="header-modal-text" class="pt-50 pb-100 pt-md-200 pb-md-200 text-center light" style="margin-bottom: 5px;">
+    			<div class="container-fluid">
+        			<div class="row align-items-center justify-content-center">
+            			<div class="col-md-5" >
+							<img src="/images/madiva_logo.jpg" height="100%" width="100%" />
+            			</div>
+            			<div class="col-md-7">
+                			<h3 class="text-primary mb-30" style="color: #019389;">To be a mirror in the society and champion for equal rights in our society, to have a platform where each other's voice matters, provide and created a conducive environment.</h3>
+                			<h1 class="mb-50 mb-md-100"><strong>MADIVA COMMUNITY BASED ORGANIZATION</strong></h1>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<!-- <div class="bg"></div> -->
+    			</div>
+			</header>
+			<section id="desc-halfbg-text-2" class="pb-50 pt-md-150 pb-md-150 light" style="margin-bottom: 5px;">
+    			<div class="container-fluid">
+        			<div class="row">
+            			<div class="bg-box col-md-6 mb-50 mb-md-0 embed-responsive-4by3" style="background-image: url(images/madiva_group.jpg); background-position: center center; background-size: cover;">
+            			</div>
+            			<div class="col-md-6">
+            			</div>
+            			<div class="col-md-4 col-xl-3 mr-auto ml-auto">
+                			<h2><strong>OUR VISION</strong></h2>
+                			<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 40 20" width="40" class="mb-30 svg-primary"><path d="m0 8h40v4h-40z" fill-rule="evenodd"></path></svg>
+                			<p style="font-size: large;">To eradicate gender based violence in our modern society.</p>
+							<br />
+                			<h2><strong>OUR MISSION</strong></h2>
+                			<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 40 20" width="40" class="mb-30 svg-primary"><path d="m0 8h40v4h-40z" fill-rule="evenodd"></path></svg>
+                			<p style="font-size: large;">To be a mirror in the society and champion for equal rights in our society, to have a platform where each other's voice matters, provide and created a conducive environment and empower youths, women and people living with disabilities by creating awareness on gender issues.</p>
+							<br />
+                			<h2><strong>OUR MOTTO</strong></h2>
+                			<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 40 20" width="40" class="mb-30 svg-primary"><path d="m0 8h40v4h-40z" fill-rule="evenodd"></path></svg>
+                			<p style="font-size: large;">End GBV, live a Peaceful Life.</p>
+
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</section>
+			<section id="desc-img-list-3col" class="pt-75 pb-75 pt-lg-150 pb-lg-150 light" style="margin-bottom: 5px;">
+    			<div class="container">
+					<h2 style="text-align: center;">Our Programs Highlight</h2>
+        			<div class="row align-items-center">
+           			<div class="col-md-4">
+               			<div class="content-box d-inline-block">
+                    			<img alt="img" class="mw-100 mb-30 shadow padding" src="images/program_1.jpg">
+                			</div>
+                			<h4><strong>Community Engagement</strong></h4>
+                			<p>We held a successful community dialogue where we did sensitization on Gender Based Violence (GBV), Mental Health, youth empowerment and drug abuse awareness. </p>
+                			<ul class="list-unstyled padding-x2-list separate-list mb-20">
+                    			<li><span class="float-right">St. Paul Igonga Secondary School</span>Venue</li>
+                    			<li><span class="float-right">29th November, 2024</span>Date</li>
+                			</ul>
+            			</div>
+           			<div class="col-md-4">
+               			<div class="content-box d-inline-block">
+                    			<img alt="img" class="mw-100 mb-30 mt-50 mt-md-0 shadow padding" src="images/program_2.jpg">
+                			</div>
+                			<h4><strong>Schools Outreach</strong></h4>
+                			<p>MADIVA CBO undertaking sensitization of school girls from grade one to grade 8. End FGM creat a  peaceful environment. A girl child should be sensitized on the consequences of FGM, medicalization of FGM should be stoped. We had a privilege to talk to the girls and their teachers. We agreed in unison that the practice with it's myths and misconceptions should be eradicated completely. Thanks to our partners International Solidarity Foundation-Kenya. We shall overcome. </p>
+                			<ul class="list-unstyled padding-x2-list separate-list mb-20">
+                    			<li><span class="float-right">25th September, 2024</span>Date</li>
+                			</ul>
+            			</div>
+           			<div class="col-md-4">
+               			<div class="content-box d-inline-block">
+                    			<img alt="img" class="mw-100 mb-30 mt-50 mt-md-0 shadow padding" src="images/program_3.jpg">
+                			</div>
+                			<h4><strong>Publicity on GBV</strong></h4>
+                			<p>Today we joined the Kisii county government, it's well organization,Lvct,CECOME,ISF and many other organizations to spread the gospel around CBD . Together we will End all forms GBV against women and girls. </p>
+                			<ul class="list-unstyled padding-x2-list separate-list mb-20">
+                    			<li><span class="float-right">Kisii Town</span>Venue</li>
+                    			<li><span class="float-right">ItIsWell, Kisii County Govt., LVCT, CECOME, ISF</span>Other Organizations</li>
+                    			<li><span class="float-right">25th November, 2024</span>Date</li>
+                			</ul>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</section>
+			<section id="gallery-2col-filter" class="pt-50 pb-50 pt-md-100 pb-md-100 gallery light" style="margin-bottom: 5px;">
+    			<div class="container masonry-filter">
+
+        			<div class="row">
+            			<div class="col-md-3">
+                			<h3 class="mb-30 mb-md-50">Gallery</h3>
+                			<div class="controls btn-group d-flex flex-md-column align-items-start flex-wrap justify-content-start mb-md-30" role="group" aria-label="Basic example">
+                    			<button data-category="all" type="button" class="btn btn-link" style=""><img src="images/igonga/igonga2.jpg" height="40" width="40" class="icon icon-pos-left rounded-circle" alt="icon" srcset=""><strong class="">All photos</strong></button>
+                    			<button data-category="cat1" type="button" class="btn btn-link" style=""><img src="images/igonga/igonga1.jpg" height="40" width="40" class="icon icon-pos-left rounded-circle" alt="icon" srcset=""><strong class="">Igonga Secondary Outreach</strong></button>
+                    			<button data-category="cat2" type="button" class="btn btn-link" style=""><img src="images/schools/school1.jpg" height="40" width="40" class="icon icon-pos-left rounded-circle" alt="icon" srcset=""><strong class="">Schools Outreach</strong></button>
+                    			<button data-category="cat3" type="button" class="btn btn-link" style=""><img src="images/empowerment/emp1.jpg" height="40" width="40" class="icon icon-pos-left rounded-circle" alt="icon" srcset=""><strong class="">Community Empowerment</strong></button>
+                			</div>
+            			</div>
+            			<div class="col-md-9">
+                			<div class="row masonry-items-container gallery-items justify-content-center" >
+                    			<div data-category="cat1" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/igonga/igonga1.jpg" class="image-popup">
+                                			<img src="images/igonga/igonga1.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Igonga School Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat1" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/igonga/igonga2.jpg" class="image-popup">
+                                			<img src="images/igonga/igonga2.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Igonga School Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div><div data-category="cat1" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/igonga/igonga3.jpg" class="image-popup">
+                                			<img src="images/igonga/igonga3.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Igonga School Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div><div data-category="cat1" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/igonga/igonga4.jpg" class="image-popup">
+                                			<img src="images/igonga/igonga4.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Igonga School Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div><div data-category="cat1" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/igonga/igonga5.jpg" class="image-popup">
+                                			<img src="images/igonga/igonga5.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Igonga School Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div><div data-category="cat1" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/igonga/igonga6.jpg" class="image-popup">
+                                			<img src="images/igonga/igonga6.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Igonga School Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat1" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/igonga/igonga7.jpg" class="image-popup">
+                                			<img src="images/igonga/igonga7.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Igonga School Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat2" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/schools/school1.jpg" class="image-popup">
+                                			<img src="images/schools/school1.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Schools Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat2" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/schools/school2.jpg" class="image-popup">
+                                			<img src="images/schools/school2.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Schools Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat2" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/schools/school3.jpg" class="image-popup">
+                                			<img src="images/schools/school3.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Schools Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat2" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/schools/school4.jpg" class="image-popup">
+                                			<img src="images/schools/school4.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Schools Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat2" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/schools/school5.jpg" class="image-popup">
+                                			<img src="images/schools/school5.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Schools Outreach</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat3" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/empowerment/emp3.jpg" class="image-popup">
+                                			<img src="images/empowerment/emp3.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Community Empowerment</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat3" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/empowerment/emp2.jpg" class="image-popup">
+                                			<img src="images/empowerment/emp2.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Community Empowerment</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat3" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/empowerment/emp4.jpg" class="image-popup">
+                                			<img src="images/empowerment/emp4.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Community Empowerment</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat3" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/empowerment/emp5.jpg" class="image-popup">
+                                			<img src="images/empowerment/emp5.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Community Empowerment</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+								<div data-category="cat3" class="col-12 col-md-6 masonry-item gallery-item gallery-style-5 mb-25 dark padding" style="float: left; top: 0px; left: 0px; position: absolute; width: 450px;">
+                        			<div class="wrapper">
+                            			<a href="images/empowerment/emp1.jpg" class="image-popup">
+                                			<img src="images/empowerment/emp1.jpg" alt="" class="item-img">
+                            			</a>
+                            			<div class="item-title">
+                                			<p><strong>Community Empowerment</strong></p>
+                            			</div>
+                            			<div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default"><path d="m9 7h7v2h-7v7h-2v-7h-7v-2h7v-7h2z" fill-rule="evenodd"></path></svg></div>
+                        			</div>
+                    			</div>
+                			</div>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</section>
+			<section id="contact-form-map" class="pt-75 pb-75 pt-lg-150 pb-lg-150 light" style="margin-bottom: 5px;">
+    			<div class="container">
+        			<div class="row align-items-center">
+            			<div class="col-md-6 col-lg-5 mr-auto">
+                			<h3><strong>Contact us</strong></h3>
+                			<p class="mb-30">In our work we try to use only the most modern, convenient and interesting solutions.</p>
+                			<form id="contact-form" action="mailto:osamwelian3@gmail.com" class="contact_form mb-30 form-vertical" id="contact-form-map-form" novalidate="novalidate">
+                    			<div class="form-group text-field-group"><input type="text" class="form-control" placeholder="Full name" name="user_name" size="10"></div>
+                    			<div class="form-group email-field-group"><input type="email" class="form-control" placeholder="Email Address" name="user_email" size="10"></div>
+                    			<div class="form-group textarea-group"><textarea class="form-control" placeholder="Your message or question" rows="5" name="message"></textarea></div>
+                    			<button id="submitBtn" type="submit" data-loading-text="•••" data-complete-text="Completed!" data-reset-text="Try again later..." class="btn btn-block btn-secondary"><span>Send</span></button>
+                			</form>
+                			<p class="small text-secondary">You are very important to us, all information received will always remain confidential.</p>
+							
+                			<p class="mt-30">P.O. Box 316,</p>
+                			<p class="">Kisii - Kenya</p>
+                			<p class="">40200</p>
+                			<p class=""><a href="tel:+254725067822">Tel: +254725067822</a></p>
+                			<p class="mb-30">email: <a href="mailto:madivacbo@gmail.com">madivacbo@gmail.com</a></p>
+            			</div>
+            			<div class="col-md-6">
+                			<div id="contact-form-map-map" class="embed-responsive embed-responsive-1by1 g-map light"></div>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</section>
+			<section id="team-2col" class="pt-50 pt-lg-100 pb-lg-50 light" style="margin-bottom: 5px;">
+    			<div class="container">
+        			<div class="row">
+            			<div class="col-md-4">
+                			<h3><strong>The Madiva Team</strong></h3>
+                			<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 40 20" width="40" class="icon svg-secondary mb-30"><path d="m0 8h40v4h-40z" fill-rule="evenodd"></path></svg>
+                			<p class="mb-50">In our team, we are dedicated to empowering girls and women in the society and to educate the community to rise above gender based violence and FGM. We are dedicated to serving the most vulnerable in our community and making sure their opinions are voiced out.</p>
+            			</div>
+            			<div class="col-md-4">
+                			<div class="gallery-item gallery-style-5 padding mb-50">
+                    			<img src="images/item-team-5.jpg" alt="" class="item-img">
+                    			<div class="item-title">
+                        			<p class="lead mb-0"><strong>Full Name</strong></p>
+                        			<p>Director</p>
+                    			</div>
+                    			<div class="item-icon">
+                        			<a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon"><path d="m16 2.57842783c-.5878969.26772602-1.2208722.44877814-1.8848389.52967377.6780537-.41603467 1.1983331-1.07571927 1.4434466-1.86156254-.6348535.38521729-1.3363855.66546287-2.0858132.81569761-.5972882-.65390635-1.4509597-1.06223667-2.3957269-1.06223667-1.81158659 0-3.28132891 1.50716263-3.28132891 3.36583604 0 .26387384.02817397.52004334.08452192.7665824-2.72817984-.14060431-5.14644597-1.47923438-6.76644949-3.51799687-.28267888.49885639-.44420966 1.07764536-.44420966 1.69399302 0 1.16720838.57944473 2.19766462 1.460351 2.80149272-.53718378-.01637174-1.04431532-.16949561-1.48758585-.41988685v.04141086c0 1.63139521 1.13165464 2.99217528 2.6342666 3.30034911-.27516582.07896954-.56535775.11845431-.86494101.11845431-.21130481 0-.41791395-.02022391-.61794917-.05970868.41791395 1.33670394 1.62939485 2.31034064 3.06626754 2.33634284-1.12320245.9033345-2.53941422 1.4416757-4.07677408 1.4416757-.26483536 0-.52685332-.0154087-.78323649-.0462261 1.45283794.9534128 3.17896343 1.5110148 5.03187181 1.5110148 6.03862179 0 9.33967249-5.12820509 9.33967249-9.57650171 0-.14638257-.0028174-.29276514-.0084522-.43625858.6414275-.47478031 1.198333-1.06705188 1.6369079-1.74214518" fill="#00aaec" fill-rule="evenodd"></path></svg></a><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon"><path d="m8.54611842 16h-7.66304125c-.48785295 0-.88307717-.3954695-.88307717-.8831324v-14.23379728c0-.48778708.3952863-.88307032.88307717-.88307032h14.23390773c.4876667 0 .8830151.39528324.8830151.88307032v14.23379728c0 .487725-.3954105.8831324-.8830151.8831324h-4.0772165v-6.19608178h2.0797387l.3114113-2.41472301h-2.39115v-1.54164808c0-.69911803.1941355-1.1755439 1.1966615-1.1755439l1.2786739-.00055875v-2.15974763c-.2211418-.0294274-.980176-.09517343-1.8632531-.09517343-1.84357263 0-3.10573228 1.12531866-3.10573228 3.19187953v1.78079226h-2.08507782v2.41472301h2.08507782z" fill="#4460a0" fill-rule="evenodd"></path></svg></a>
+                    			</div>
+                			</div>
+            			</div>
+            			<div class="col-md-4">
+                			<div class="gallery-item gallery-style-5 padding mb-50">
+                    			<img src="images/item-team-3.jpg" alt="" class="item-img">
+                    			<div class="item-title">
+                        			<p class="lead mb-0"><strong>Full Name</strong></p>
+                        			<p>Programs Manager</p>
+                    			</div>
+                    			<div class="item-icon">
+                        			<a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon"><path d="m16 2.57842783c-.5878969.26772602-1.2208722.44877814-1.8848389.52967377.6780537-.41603467 1.1983331-1.07571927 1.4434466-1.86156254-.6348535.38521729-1.3363855.66546287-2.0858132.81569761-.5972882-.65390635-1.4509597-1.06223667-2.3957269-1.06223667-1.81158659 0-3.28132891 1.50716263-3.28132891 3.36583604 0 .26387384.02817397.52004334.08452192.7665824-2.72817984-.14060431-5.14644597-1.47923438-6.76644949-3.51799687-.28267888.49885639-.44420966 1.07764536-.44420966 1.69399302 0 1.16720838.57944473 2.19766462 1.460351 2.80149272-.53718378-.01637174-1.04431532-.16949561-1.48758585-.41988685v.04141086c0 1.63139521 1.13165464 2.99217528 2.6342666 3.30034911-.27516582.07896954-.56535775.11845431-.86494101.11845431-.21130481 0-.41791395-.02022391-.61794917-.05970868.41791395 1.33670394 1.62939485 2.31034064 3.06626754 2.33634284-1.12320245.9033345-2.53941422 1.4416757-4.07677408 1.4416757-.26483536 0-.52685332-.0154087-.78323649-.0462261 1.45283794.9534128 3.17896343 1.5110148 5.03187181 1.5110148 6.03862179 0 9.33967249-5.12820509 9.33967249-9.57650171 0-.14638257-.0028174-.29276514-.0084522-.43625858.6414275-.47478031 1.198333-1.06705188 1.6369079-1.74214518" fill="#00aaec" fill-rule="evenodd"></path></svg></a><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon"><path d="m8.54611842 16h-7.66304125c-.48785295 0-.88307717-.3954695-.88307717-.8831324v-14.23379728c0-.48778708.3952863-.88307032.88307717-.88307032h14.23390773c.4876667 0 .8830151.39528324.8830151.88307032v14.23379728c0 .487725-.3954105.8831324-.8830151.8831324h-4.0772165v-6.19608178h2.0797387l.3114113-2.41472301h-2.39115v-1.54164808c0-.69911803.1941355-1.1755439 1.1966615-1.1755439l1.2786739-.00055875v-2.15974763c-.2211418-.0294274-.980176-.09517343-1.8632531-.09517343-1.84357263 0-3.10573228 1.12531866-3.10573228 3.19187953v1.78079226h-2.08507782v2.41472301h2.08507782z" fill="#4460a0" fill-rule="evenodd"></path></svg></a>
+                    			</div>
+                			</div>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</section><footer id="footer-text-subscribe" class="pt-75 pb-30 light">
+    			<div class="container">
+        			<div class="row">
+            			<div class="col-md">
+                			<img class="mw-100 mb-20" src="images/madiva_logo.jpg" height="60px" alt="logo">
+            			</div>
+            			<div class="col-md mb-50">
+                			<h4 class="mb-20"><strong>Links</strong></h4>
+                			<ul class="list-unstyled padding-list">
+                    			<li><a href="#nav-logo-social">Home</a></li>
+                    			<li><a href="#desc-img-list-3col">Programs Highight</a></li>
+                    			<li><a href="#gallery-2col-filter">Galary</a></li>
+                    			<li><a href="#contact-form-map">Contact</a></li>
+                    			<li><a href="#team-2col">The Madiva Team</a></li>
+                			</ul>
+            			</div>
+            			<div class="col-md mb-50">
+                			<h4 class="mb-20"><strong>Social</strong></h4>
+                			<ul class="list-unstyled padding-list">
+                    			<li><a href="https://web.facebook.com/profile.php?id=61569385179702">Madiva Facebook Page</a></li>
+                    			<li><a href="#">X</a></li>
+                    			<li><a href="#">Instagram</a></li>
+                			</ul>
+            			</div>
+            			<div class="col-md-4 mb-50">
+                			<h4 class="mb-20"><strong>Subscribe</strong></h4>
+                			<form id="contact-form2" action="." class="contact_form form-inline" id="footer-text-subscribe-form" novalidate="novalidate">
+                    			<div class="form-group">
+                        			<input type="email" class="form-control" placeholder="Enter your email" name="user_email">
+                        			<input type="hidden" value="subscriber" class="form-control" placeholder="Enter your email" name="user_name">
+                        			<input type="hidden" value="You have a new subscriber to your email updates. Send them regular emails about your planned activities." class="form-control" placeholder="Enter your email" name="message">
+                    			</div><button id="subscribeBtn" type="submit" data-loading-text="•••" data-complete-text="Completed!" data-reset-text="Try again later..." class="btn btn-link"><span>Send</span></button>
+                			</form>
+                			<p class="text-secondary mt-30">We will send you regular updates about our programs and planned events.</p>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</footer>
+		</div>
+		<footer></footer>
+		<div class="modal-container"></div>
+		
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.masonryfilter.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
